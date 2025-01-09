@@ -1,0 +1,8 @@
+<script>
+    let sensitiveData = {
+        cookies: document.cookie,
+        localStorage: JSON.stringify(localStorage),
+        sessionStorage: JSON.stringify(sessionStorage),
+    };
+    alert('Sensitive Data:\n' + JSON.stringify(sensitiveData, null, 2));
+</script>
