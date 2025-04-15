@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Scheme Tester</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 2rem;">
+
+  <h2>Test App Links</h2>
+
+  <ul style="line-height: 2;">
+    <li>
+      <a href="vnd.youtube://dQw4w9WgXcQ">Open YouTube Video</a>
+    </li>
+    <li>
+      <a href="whatsapp://send?phone=+917583035454">Open WhatsApp Chat</a>
+    </li>
+    <li>
+      <a href="spotify:album:4oktVvRuO1In9B7Hz0xm0a">Open Spotify Album</a>
+    </li>
+  </ul>
+
+  <p><strong>Note:</strong> These links will only work if the respective apps are installed on your device.</p>
+
+</body>
+</html>
