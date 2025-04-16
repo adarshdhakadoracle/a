@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <title>Custom Scheme Tester with Buttons</title>
     <script>
+      function openApp1() {
+                    navigator.startApp.start("com.anglianwater.printlabels", function(message) { /* success */
+                    console.log(message); // => OK
+                }, 
+            function(error) { /* error */
+                console.log(error);
+            });
+      }
       function openApp() {
         navigator.startApp.check("com.anglianwater.printlabels", function(message) { /* success */
     console.log(message); // => OK
 }, 
-function(error) { /* error */
-    console.log(error);
-});
+      function(error) { /* error */
+          console.log(error);
+      });
       //  window.location.assign("printlabels://print-labels.com/samplenumber/12345");
       }
     </script>
@@ -111,6 +119,8 @@ function(error) { /* error */
   </button>
  <br><br>
  <button onclick="openApp()">Open App</button>
+
+   <button onclick="openApp1()">Open App</button>
 
   <p><strong>Note:</strong> These buttons will only work if the respective apps are installed and registered to handle the scheme.</p>
 
