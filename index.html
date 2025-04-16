@@ -5,7 +5,13 @@
   <title>Custom Scheme Tester with Buttons</title>
     <script>
       function openApp() {
-        window.location.assign("printlabels://print-labels.com/samplenumber/12345");
+        navigator.startApp.check("com.anglianwater.printlabels", function(message) { /* success */
+    console.log(message); // => OK
+}, 
+function(error) { /* error */
+    console.log(error);
+});
+      //  window.location.assign("printlabels://print-labels.com/samplenumber/12345");
       }
     </script>
 </head>
