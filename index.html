@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Custom Scheme Tester with Buttons</title>
+    <script>
+      function openApp() {
+        window.location.assign("printlabels://print-labels.com/samplenumber/12345");
+      }
+    </script>
 </head>
 <body style="font-family: Arial, sans-serif; padding: 2rem;">
 
@@ -99,9 +104,7 @@
     open external google
   </button>
 
-<button onclick="window.location = 'intent:https://example.com#Intent;end'">
-  7
-</button>
+ <button onclick="openApp()">Open App</button>
 
   <p><strong>Note:</strong> These buttons will only work if the respective apps are installed and registered to handle the scheme.</p>
 
