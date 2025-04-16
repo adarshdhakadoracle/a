@@ -77,12 +77,27 @@
    3
   </a>
  <br><br>
-<a href="intent://URI#Intent;scheme=UriSchemes;package=PACKAGE">
-    Click to open on Chrome
-  </a>
 
 
+  
+    
+<button onclick="window.open("googlechrome://navigate?url=print-labels.com/samplenumber/%7B%7D","_system")">
+    open external 4
+  </button>
 
+  
+<button onclick="window.open("googlechrome://navigate?url=https://print-labels.com/samplenumber/%7B%7D","_system")">
+    open external 5
+  </button>
+
+  
+<button onclick="window.open("googlechrome://navigate?url=printlabels://print-labels.com/samplenumber/%7B%7D","_system")">
+    open external 6
+  </button>
+
+  <button onclick="window.open("googlechrome://navigate?url=https://google.com","_system")">
+    open external google
+  </button>
 
   <p><strong>Note:</strong> These buttons will only work if the respective apps are installed and registered to handle the scheme.</p>
 
