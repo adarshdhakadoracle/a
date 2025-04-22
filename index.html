@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Custom Scheme Tester with Buttons</title>
-    <script>
+<!--     <script>
       function openApp1() {
                     navigator.startApp.start("com.anglianwater.printlabels", function(message) { /* success */
                     console.log(message); // => OK
@@ -15,7 +15,7 @@
       function openApp() {
          window.location.assign("printlabels://print-labels.com/samplenumber/12345");
       }
-    </script>
+    </script> -->
 </head>
 <body style="font-family: Arial, sans-serif; padding: 2rem;">
 
@@ -41,13 +41,13 @@
   </button>
   <br><br>
 
-   <button onclick="window.open('com.oracle.ofsc://')">
-    com.oracle.ofsc://
+   <button onclick="window.open('com.oracle.ofsc://#screen=activity_by_id&activityId=8769520&date=2025-01-29')">
+    com.oracle.ofsc://#screen=activity_by_id&activityId=8769520&date=2025-01-29
   </button>
   <br><br>
 
-    <button onclick="window.open('com.oracle.ofsc:')">
-    com.oracle.ofsc:
+    <button onclick="window.open('com.oracle.ofsc://#screen=activity_list')">
+      com.oracle.ofsc://#screen=activity_list
   </button>
   <br><br>
 
@@ -56,70 +56,23 @@
   </button>
   <br><br>
 
-  <a href="intent:https://vnd.youtube:dQw4w9WgXcQ#Intent;end" target="_blank">Open Browser</a>
-
- <a href="intent:printlabels:print-labels.com/samplenumber/%7B%7D;end" target="_blank">Open printer</a>
-<br><br>
-<a href="intent:https:/'/'printlabels:print-labels.com/samplenumber/%7B%7D#Intent;end" target="_blank">Open Browser</a>
-
-  <br><br>
-<a href="intent:https://google.com;end" target="_blank">Open Browser google</a>
- <br><br>
-<a href="intent://print-labels.com/samplenumber/123456#Intent;scheme=printlabels;package=com.your.package;end" target="_blank">intent PrintLabels App</a>
- <br><br>
-<a href="intent://www.youtube.com/watch?v=dQw4w9WgXcQ#Intent;package=com.google.android.youtube;scheme=https;end" target="_blank">
-  Open YouTube Video
-</a>
-
- <br><br>
-<a href="intent://google.com#Intent;scheme=https;package=com.android.chrome;end">
-    1
-  </a>
- <br><br>
-
-<a href="intent://print-labels.com/samplenumber/123456#Intent;scheme=printlabels;package=com.anglianwater.printlabels;end">
-   2
-  </a>
- <br><br>
-   <br><br>
-<a href="intent://print-labels.com/samplenumber/123456#Intent;scheme=https;package=com.anglianwater.printlabels;end">
-   4
-  </a>
- <br><br>
-<a href="intent://print-labels.com/samplenumber/%7B%7D#Intent;scheme=https;package=com.android.chrome;end">
-   3
-  </a>
- <br><br>
-
-
   
     
-<button onclick="window.open("googlechrome://navigate?url=print-labels.com/samplenumber/%7B%7D","_system")">
-    open external 4
+<button onclick="window.open('https://ua.fs.ocs.oraclecloud.com/mobility/gopenid')">
+   https://ua.fs.ocs.oraclecloud.com/mobility/gopenid
   </button>
 
   
-<button onclick="window.open("googlechrome://navigate?url=https://print-labels.com/samplenumber/%7B%7D","_system")">
-    open external 5
+<button onclick="window.open('https://ua.fs.ocs.oraclecloud.com/mobility/gopenid/mobility')">
+    https://ua.fs.ocs.oraclecloud.com/mobility/gopenid/mobility
   </button>
 
    <br><br>
-<button onclick="window.open("googlechrome://navigate?url=printlabels://print-labels.com/samplenumber/%7B%7D","_system")">
+<button onclick="window.open('com.oracle.ofsc://#mobility/gopenid/mobility')">
     open external 6
   </button>
  <br><br>
-  <button onclick="window.open("googlechrome://navigate?url=https://google.com","_system")">
-    open external google
-  </button>
- <br><br>
- <button onclick="openApp()">Open App</button>
 
-   <button onclick="openApp1()">start App</button>
-
-  <a href="printlabels://print-labels.com/samplenumber/%7B%7D#">
-   printlabels
-  </a>
-<br><br>
 
   <p><strong>Note:</strong> These buttons will only work if the respective apps are installed and registered to handle the scheme.</p>
 
